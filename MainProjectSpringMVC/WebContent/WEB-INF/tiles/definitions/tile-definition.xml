@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+<definition name="baseLayout" template="/WEB-INF/tiles/template/baseLayout.jsp">
+	<put-attribute name="title" value="Sample Title" />
+	<put-attribute name="heading" value="" />
+	<put-attribute name="tagline" value="" />
+	<put-attribute name="navigation" value="/WEB-INF/tiles/template/navigation.jsp" />
+	<put-attribute name="content" value="" />
+	<put-attribute name="footer" value="/WEB-INF/tiles/template/footer.jsp" />
+</definition>
+
+<definition name="welcome" extends="baseLayout">
+	<put-attribute name="title" value="EBazzar" />
+	<put-attribute name="heading" value="EBazzar Online Store" />
+	<put-attribute name="tagline" value="Welcome to our online store" />
+	<put-attribute name="content" value="/WEB-INF/jsp/welcome.jsp" />
+</definition>
+<definition name="catalog" extends="baseLayout">
+	<put-attribute name="title" value="Catalog" />
+	<put-attribute name="heading" value="EBazzar Online Store" />
+	<put-attribute name="tagline" value="List of Catalogs" />
+	<put-attribute name="content" value="/WEB-INF/jsp/catalog.jsp" />
+</definition>
+
+<definition name="customer" extends="baseLayout">
+	<put-attribute name="title" value="Customer Service" />
+	<put-attribute name="heading" value="EBazzar Online Store" />
+	<put-attribute name="tagline" value="Customer Services" />
+	<put-attribute name="content" value="/WEB-INF/jsp/customer.jsp" />
+</definition>
+
+<definition name="product" extends="baseLayout">
+	<put-attribute name="title" value="Product list" />
+	<put-attribute name="heading" value="Product List" />
+	<put-attribute name="tagline" value="Available Products" />
+	<put-attribute name="content" value="/WEB-INF/jsp/product.jsp" />
+</definition>
+<definition name="productdetail" extends="baseLayout">
+	<put-attribute name="title" value="Product Detail" />
+	<put-attribute name="heading" value="Product Detail" />
+	<put-attribute name="tagline" value="Description of the product" />
+	<put-attribute name="content" value="/WEB-INF/jsp/productdetail.jsp" />
+</definition>
+
+<definition name="addproduct" extends="baseLayout">
+	<put-attribute name="title" value="Add Movie" />
+	<put-attribute name="heading" value="Add Movie" />
+	<put-attribute name="tagline" value="Add Movie" />
+	<put-attribute name="content" value="/WEB-INF/jsp/cart.jsp" />
+</definition>
+
+</tiles-definitions>
